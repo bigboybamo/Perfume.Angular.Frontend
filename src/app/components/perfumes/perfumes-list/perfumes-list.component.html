@@ -6,6 +6,7 @@
             <th>Id</th>
             <th>Name</th>
             <th>Brand</th>
+            <th> </th>
         </tr>
     </thead>
 <tbody>
@@ -13,6 +14,7 @@
         <td>{{perfume.id}}</td>
         <td>{{perfume.name}}</td>
         <td>{{perfume.brand}}</td>
+        <td><a [routerLink]="['/perfumes','edit', perfume.id]">view</a></td>
     </tr>
 </tbody>
 </table>

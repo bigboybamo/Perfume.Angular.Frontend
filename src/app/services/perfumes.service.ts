@@ -18,4 +18,16 @@ export class PerfumesService {
   {
    return this.http.post<Perfume>(this.baseApiUrl + 'api/Perfume', addPerfumeRequest )
   }
+
+  getPerfume(id: string): Observable<Perfume>{
+   return this.http.get<Perfume>(this.baseApiUrl + 'api/Perfume/'+ id)
+  }
+
+  updatePerfume(id: string, updatePerfumeRequest: Perfume): Observable<Perfume>{
+   return this.http.put<Perfume>(this.baseApiUrl + 'api/Perfume/'+ id, updatePerfumeRequest);
+  }
+
+  deletePerfume(id: string): Observable<Perfume>{
+    return this.http.delete<Perfume>(this.baseApiUrl + 'api/Perfume/'+ id);
+  }
 }

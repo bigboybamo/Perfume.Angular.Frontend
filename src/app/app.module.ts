@@ -7,12 +7,14 @@ import { AppComponent } from './app.component';
 import { PerfumesListComponent } from './components/perfumes/perfumes-list/perfumes-list.component';
 import { AddPerfumeComponent } from './components/perfumes/add-perfume/add-perfume.component';
 import { FormsModule } from '@angular/forms';
+import { EditPerfumeComponent } from './components/perfumes/edit-perfume/edit-perfume.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PerfumesListComponent,
-    AddPerfumeComponent
+    AddPerfumeComponent,
+    EditPerfumeComponent
   ],
   imports: [
     BrowserModule,

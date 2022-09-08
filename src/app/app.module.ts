@@ -8,7 +8,7 @@ import { PerfumesListComponent } from './components/perfumes/perfumes-list/perfu
 import { AddPerfumeComponent } from './components/perfumes/add-perfume/add-perfume.component';
 import { FormsModule } from '@angular/forms';
 import { EditPerfumeComponent } from './components/perfumes/edit-perfume/edit-perfume.component';
-
+import { ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +20,8 @@ import { EditPerfumeComponent } from './components/perfumes/edit-perfume/edit-pe
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
